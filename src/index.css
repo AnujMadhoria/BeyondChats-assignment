@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #4b5563;
+  border-radius: 10px;
+  border: 2px solid #1e1e1e;
+}
+
+/* Dark mode overrides */
+.dark {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 30 30 / var(--tw-bg-opacity));
+  color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+
+/* Transition effects */
+.sidebar-transition {
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Tailwind custom classes */
+/* Mobile-specific styles */
+@media (max-width: 767px) {
+  /* Make conversation items more compact */
+  .conversation-item {
+    padding: 0.75rem;
+  }
+  
+  /* Adjust header heights */
+  .messenger-header {
+    padding: 0.5rem;
+  }
+  
+  /* Sidebar full height on mobile */
+  .sidebar-mobile {
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+  }
+  
+  /* Hide unnecessary elements on mobile */
+  .mobile-hidden {
+    display: none;
+  }
+}
+
+/* Sidebar transitions */
+.sidebar-transition {
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Overlay for mobile */
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 30;
+}
+/* Fullscreen mode styles */
+.fullscreen-copilot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+}
+
+/* Ensure content is properly sized in fullscreen */
+.fullscreen-copilot .copilot-content {
+  height: calc(100vh - 3rem);
+}
