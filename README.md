@@ -1,12 +1,88 @@
-# React + Vite
+Fin AI Agent UI with Copilot
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Overview
+Fin AI Agent UI is a modern customer support dashboard featuring an AI-powered Copilot assistant. This responsive web application provides support teams with an intuitive interface to manage customer conversations across multiple channels with AI assistance.
 
-Currently, two official plugins are available:
+Key Features
+Three-panel interface with inbox, conversation list, and AI Copilot
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Responsive design that works on desktop, tablet, and mobile
 
-## Expanding the ESLint configuration
+Dark/light mode toggle with system preference detection
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+AI Copilot assistant with conversation history
+
+Real-time messaging interface
+
+Conversation management with status tracking
+
+Fullscreen mode for the Copilot panel
+
+Technologies Used
+Frontend: React.js with Vite
+
+Styling: Tailwind CSS
+
+Icons: React Icons (Feather icons)
+
+State Management: React Hooks
+
+Build Tool: Vite
+
+Installation
+Clone the repository:
+
+bash
+git clone https://github.com/your-username/fin-ai-agent-ui.git
+cd fin-ai-agent-ui
+Install dependencies:
+
+bash
+npm install
+Start the development server:
+
+bash
+npm run dev
+Open your browser to:
+
+http://localhost:3000
+Project Structure
+/src
+  /components
+    /Copilot       # Copilot sidebar components
+    /Inbox         # Inbox sidebar components
+    /Messenger     # Main conversation components
+    /common        # Shared components
+  /hooks           # Custom React hooks
+  /data            # Mock data
+  /styles          # Global styles
+  App.jsx          # Main application component
+  main.jsx         # Application entry point
+Available Scripts
+npm run dev: Starts the development server
+
+npm run build: Builds the app for production
+
+npm run lint: Runs ESLint
+
+npm run preview: Previews the production build
+
+Configuration
+The application can be configured through these files:
+
+tailwind.config.js: Tailwind CSS configuration
+
+vite.config.js: Vite build configuration
+
+Contributing
+Contributions are welcome! Please follow these steps:
+
+Fork the repository
+
+Create a new branch (git checkout -b feature/your-feature)
+
+Commit your changes (git commit -m 'Add some feature')
+
+Push to the branch (git push origin feature/your-feature)
+
+Open a Pull Request
