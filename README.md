@@ -1,88 +1,105 @@
-Fin AI Agent UI with Copilot
+🚀 Fin AI Agent UI with Copilot
+Fin AI Agent UI is a modern, responsive customer support dashboard built with React and Tailwind CSS. It features a smart three-panel layout with a powerful AI Copilot assistant, enabling support teams to efficiently manage customer interactions across multiple channels — with real-time messaging, conversation management, and intelligent suggestions.
 
-Overview
-Fin AI Agent UI is a modern customer support dashboard featuring an AI-powered Copilot assistant. This responsive web application provides support teams with an intuitive interface to manage customer conversations across multiple channels with AI assistance.
+✨ Key Features
+🧭 Three-Panel Interface – Includes Inbox, Messenger, and AI Copilot sections
 
-Key Features
-Three-panel interface with inbox, conversation list, and AI Copilot
+💬 Real-Time Messaging – Seamless interaction with live conversation updates
 
-Responsive design that works on desktop, tablet, and mobile
+🤖 AI Copilot Assistant – Intelligent assistant with conversation context
 
-Dark/light mode toggle with system preference detection
+🌗 Dark/Light Mode – Follows system preference with toggle support
 
-AI Copilot assistant with conversation history
+📱 Fully Responsive – Optimized for desktop, tablet, and mobile devices
 
-Real-time messaging interface
+🔄 Conversation Management – Includes status tracking and filters
 
-Conversation management with status tracking
+🖥️ Fullscreen Copilot Mode – Focus view for deep context interaction
 
-Fullscreen mode for the Copilot panel
+🛠️ Tech Stack
+Tech	Description
+React.js	UI library for building SPA
+Vite	Lightning-fast build tool
+Tailwind CSS	Utility-first CSS framework
+React Icons	Feather icons for UI clarity
+React Hooks	State management
 
-Technologies Used
-Frontend: React.js with Vite
-
-Styling: Tailwind CSS
-
-Icons: React Icons (Feather icons)
-
-State Management: React Hooks
-
-Build Tool: Vite
-
-Installation
-Clone the repository:
+📁 Project Structure
+bash
+Copy
+Edit
+/src
+ ├── components/
+ │    ├── Copilot/        # AI assistant sidebar
+ │    ├── Inbox/          # Left sidebar inbox
+ │    ├── Messenger/      # Center panel for chat
+ │    └── common/         # Shared UI components
+ ├── hooks/              # Custom React hooks
+ ├── data/               # Static/mock data
+ ├── styles/             # Global Tailwind styles
+ ├── App.jsx             # Main layout component
+ └── main.jsx            # Entry point
+⚙️ Installation & Setup
+Clone the repository
 
 bash
+Copy
+Edit
 git clone https://github.com/your-username/fin-ai-agent-ui.git
 cd fin-ai-agent-ui
-Install dependencies:
+Install dependencies
 
 bash
+Copy
+Edit
 npm install
-Start the development server:
+Run the development server
 
 bash
+Copy
+Edit
 npm run dev
-Open your browser to:
+Visit in your browser
 
+bash
+Copy
+Edit
 http://localhost:3000
-Project Structure
-/src
-  /components
-    /Copilot       # Copilot sidebar components
-    /Inbox         # Inbox sidebar components
-    /Messenger     # Main conversation components
-    /common        # Shared components
-  /hooks           # Custom React hooks
-  /data            # Mock data
-  /styles          # Global styles
-  App.jsx          # Main application component
-  main.jsx         # Application entry point
-Available Scripts
-npm run dev: Starts the development server
+🧪 Available Scripts
+Command	Description
+npm run dev	Start the development server
+npm run build	Create production build
+npm run preview	Preview the production build
+npm run lint	Run ESLint on source files
 
-npm run build: Builds the app for production
+⚙️ Configuration Files
+tailwind.config.js – Tailwind theme and plugin settings
 
-npm run lint: Runs ESLint
+vite.config.js – Vite build and plugin configuration
 
-npm run preview: Previews the production build
-
-Configuration
-The application can be configured through these files:
-
-tailwind.config.js: Tailwind CSS configuration
-
-vite.config.js: Vite build configuration
-
-Contributing
-Contributions are welcome! Please follow these steps:
+🤝 Contributing
+We welcome contributions! Here’s how to get started:
 
 Fork the repository
 
-Create a new branch (git checkout -b feature/your-feature)
+Create a feature branch
 
-Commit your changes (git commit -m 'Add some feature')
+bash
+Copy
+Edit
+git checkout -b feature/your-feature
+Commit your changes
 
+bash
+Copy
+Edit
+git commit -m "Add your feature"
+Push to your fork and open a PR
+
+📄 License
+This project is licensed under the MIT License.
+
+Built with ❤️ by Your Name
 Push to the branch (git push origin feature/your-feature)
 
 Open a Pull Request
